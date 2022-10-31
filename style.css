@@ -73,25 +73,10 @@ header ul li a{
     transition: all 0.3s ease;
 }
 
-/* header ul li a:after{
-    content: "";
-    position: absolute;
-    background-color: #284136;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-} */
-
 header ul li a:hover{
     color: #284136;
     transition: all .3s ease-in-out;
 }
-
-/* header ul li a:hover:after{
-    width: 100%;
-} */
 
 .content{
     position: relative;
@@ -186,28 +171,6 @@ header ul li a:hover{
     margin-left: -30px;
 }
 
-.sci{
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* .sci li{
-    list-style: none;
-}
-
-.sci li a{
-    display: inline-block;
-    margin: 5-x 0;
-    transform: scale(0.6);
-    filter: invert(1);
-} */
-
 .circle{
     position: absolute;
     top: 0;
@@ -224,109 +187,6 @@ header ul li a:hover{
     justify-content: center;
     align-items: center;
     background-color: #284136;
-}
-
-/* Book */
-.book {
-    position: relative;
-    width: 450px;
-    height: 600px;
-    transition: transform 0.5s;
-    flex-direction: row;
-}
-
-.paper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    perspective: 1500px;
-}
-
-.front,
-.back {
-    background-color: #FCF8E8;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform-origin: left;
-    transition: transform 0.8s;
-    justify-content: center;
-    align-items: center;
-}
-
-.front {
-    z-index: 1;
-    backface-visibility: hidden;
-    border-left: 3px solid #284136;
-}
-
-.back {
-    z-index: 0;
-}
-
-.front-content,
-.back-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.back-content {
-    transform: rotateY(180deg)
-}
-
-/* Paper flip effect */
-.flipped .front,
-.flipped .back {
-    transform: rotateY(-180deg);
-}
-
-.book-title {
-    font-size: 3em;
-    margin-top: -100px;
-}
-
-.cover-img {
-    max-width: 300px;
-    /* object-fit: cover; */
-}
-
-/* Controller Buttons */
-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    margin: 50px;
-    transition: transform 0.5s;
-}
-
-button:focus {
-    outline: none;
-}
-
-button:hover i {
-    color: #636363;
-}
-
-i {
-    font-size: 50px;
-    color: gray;
-}
-
-/* Paper stack order */
-#p1 {
-    z-index: 2;
-}
-
-#p2 {
-    z-index: 1;
 }
 
 .menu {
